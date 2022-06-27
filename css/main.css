@@ -545,11 +545,82 @@ header .btn-menu img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-@media (max-width: 991px) {
-  .s-hero .slide-principal .swiper-wrapper .swiper-slide .left-content {
-    margin-left: 13.8rem;
+@media (max-width: 1200px) {
+  .s-hero .slide-thumbnail {
+    left: 1%;
   }
 }
+@media (max-width: 991px) {
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide.slide-02 .left-content {
+    max-width: 46.2rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide.slide-02 h2 {
+    font-size: 5.8rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide .left-content {
+    margin-left: 0;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide .left-content h2 {
+    font-size: 6.4rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide .right-content {
+    position: absolute;
+    right: 0;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide .right-content .logo {
+    margin-top: -5.3rem;
+    margin-bottom: 21rem;
+  }
+  .s-hero .slide-thumbnail {
+    left: 1.5rem;
+    top: initial;
+    bottom: 10.5rem;
+    height: 4.8rem;
+  }
+}
+@media (max-width: 560px) {
+  .s-hero .slide-principal {
+    height: 62rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide {
+    padding-top: 13.1rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide.slide-01 {
+    background-position-x: 40%;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide.slide-01 h2 {
+    max-width: 26rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide.slide-02 {
+    background-position-x: 63%;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide.slide-02 .left-content h2 {
+    font-size: 4rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide.slide-02 .left-content p {
+    max-width: 30.5rem;
+    font-size: 1.6rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide.slide-03 {
+    background-position-x: 60%;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide.slide-03 .left-content h2 {
+    max-width: 31rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide.slide-03 .left-content p {
+    max-width: 26rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide .left-content h2 {
+    font-size: 4rem;
+  }
+  .s-hero .slide-principal .swiper-wrapper .swiper-slide .right-content {
+    display: none;
+  }
+  .s-hero .slide-thumbnail {
+    bottom: 65px;
+  }
+}
+
 .s-games {
   margin-bottom: 10.7rem;
 }
@@ -682,6 +753,57 @@ header .btn-menu img {
 .s-games .tab-games-content .tab-pane-games .card-all-games span img {
   margin-right: 1.3rem;
 }
+@media (max-width: 991px) {
+  .s-games .tab-games-content .tab-pane-games.active .game-card .image {
+    height: 21.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .s-games .tab-games-content .tab-pane-games.active {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4.1rem 3.2rem;
+  }
+  .s-games .tab-games-content .tab-pane-games.active .game-card .image {
+    height: 21.3rem;
+  }
+  .s-games .tab-games-content .tab-pane-games .card-all-games {
+    height: 30.4rem;
+  }
+}
+@media (max-width: 560px) {
+  .s-games .top {
+    margin-bottom: 5.7rem;
+  }
+  .s-games .top .left-top span {
+    display: none;
+  }
+  .s-games .top .left-top h2 {
+    max-width: 15.3rem;
+    font-size: 2.8rem;
+  }
+  .s-games .top .right-top {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 3rem;
+  }
+  .s-games .top .right-top .js-nav-games {
+    display: none;
+  }
+  .s-games .top .right-top .js-nav-games a {
+    font-size: 1.4rem;
+  }
+  .s-games .tab-games-content .tab-pane-games.active {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.7rem 3.2rem;
+  }
+  .s-games .tab-games-content .tab-pane-games.active .game-card .image {
+    height: 21.3rem;
+  }
+  .s-games .tab-games-content .tab-pane-games .card-all-games {
+    height: 30.4rem;
+  }
+}
 
 .s-download {
   width: 100%;
@@ -776,6 +898,53 @@ header .btn-menu img {
   right: -6.1rem;
   -webkit-animation: float 4.6s infinite;
   animation: float 4.6s infinite;
+}
+@media (max-width: 991px) {
+  .s-download .container .area-right {
+    width: 90.7rem;
+    height: 51.9rem;
+  }
+  .s-download .container .area-right .image-1 {
+    width: 89.7rem;
+    height: 50.6rem;
+  }
+  .s-download .container .area-right .image-2 {
+    width: 57.6rem;
+    height: 30.6rem;
+  }
+}
+@media (max-width: 991px) and (max-width: 375px) {
+  .s-download {
+    background-position-x: 10%;
+    overflow-y: hidden;
+  }
+  .s-download .container {
+    position: relative;
+  }
+  .s-download .container .text-left {
+    padding-top: 6.3rem;
+  }
+  .s-download .container .area-right {
+    margin-top: 40rem;
+  }
+  .s-download .container .area-right .image-1 {
+    position: relative;
+    width: 52.8rem;
+    height: 29.8rem;
+  }
+  .s-download .container .area-right .image-1 img {
+    position: absolute;
+    left: -27rem;
+  }
+  .s-download .container .area-right .image-2 {
+    position: relative;
+    width: 33.6rem;
+    height: 18.9rem;
+  }
+  .s-download .container .area-right .image-2 img {
+    position: absolute;
+    top: -48rem;
+  }
 }
 
 .show-modal .modal {
