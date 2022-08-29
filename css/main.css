@@ -545,6 +545,43 @@ header .btn-menu img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
+.s-hero .swiper-progress-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  z-index: 3;
+}
+.s-hero .swiper-progress-bar.active .slide-progress-bar {
+  opacity: 1;
+}
+.s-hero .swiper-progress-bar.animate .slide-progress-bar:after {
+  width: 100%;
+  -webkit-transition: width 3.5s linear;
+  transition: width 3.5s linear;
+}
+.s-hero .swiper-progress-bar .slide-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 3px;
+  opacity: 0;
+  display: block;
+}
+.s-hero .swiper-progress-bar .slide-progress-bar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00aeff;
+  height: 100%;
+  width: 0;
+  -webkit-transition: width 0.1s linear;
+  transition: width 0.1s linear;
+}
 @media (max-width: 1200px) {
   .s-hero .slide-thumbnail {
     left: 1%;
@@ -754,6 +791,18 @@ header .btn-menu img {
   margin-right: 1.3rem;
 }
 @media (max-width: 991px) {
+  .s-games .top .right-top {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 3rem;
+  }
+  .s-games .top .right-top .js-nav-games {
+    display: none;
+  }
+  .s-games .top .right-top .js-nav-games a {
+    font-size: 1.4rem;
+  }
   .s-games .tab-games-content .tab-pane-games.active .game-card .image {
     height: 21.3rem;
   }
@@ -807,7 +856,7 @@ header .btn-menu img {
 
 .s-download {
   width: 100%;
-  height: 85.2rem;
+  height: 89.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -12,6 +12,7 @@ var slide_thumbnail = new Swiper('.slide-thumbnail', {
     }
   }
 })
+const progressSlide = document.querySelector('.js-progress-bar')
 
 var slide_hero = new Swiper('.slide-principal', {
   effect: 'fade',
@@ -21,6 +22,23 @@ var slide_hero = new Swiper('.slide-principal', {
   autoplay: {
     delay: 3500,
     disableOnInteraction: false
+  },
+  on: {
+    init: function () {
+      progressSlide.classList.remove('animate')
+      progressSlide.classList.remove('active')
+      progressSlide.classList.add('animate')
+      progressSlide.classList.add('active')
+    },
+
+    slideChangeTransitionStart: function () {
+      progressSlide.classList.remove('animate')
+      progressSlide.classList.remove('active')
+      progressSlide.classList.add('active')
+    },
+    slideChangeTransitionEnd: function () {
+      progressSlide.classList.add('animate')
+    }
   }
 })
 
@@ -28,6 +46,7 @@ const allFilters = document.querySelectorAll('.js-nav-games li a')
 const tabPane = document.querySelectorAll('.tab-pane-games')
 allFilters.forEach((filter, index) => {
   filter.addEventListener('click', event => {
+    console.log('ok')
     event.preventDefault()
     allFilters.forEach(item => {
       item.classList.remove('active')
@@ -47,7 +66,6 @@ btnOpenModal.addEventListener('click', event => {
   event.preventDefault()
   let html = document.documentElement
   html.classList.add('show-modal')
-  console.log('foda-se')
 })
 
 const btnCloseModal = document.querySelector('.js-close')
@@ -74,15 +92,13 @@ btnMenu.forEach((btn, index) => {
       itemMenu.classList.remove('active')
       itemMenu.addEventListener('mouseleave', () => {
         itemMenu.classList.remove('active')
-        btnMenu.forEach(itemBtn => {
-          itemBtn.classList.remove('active')
-        })
       })
     })
 
     btnMenu.forEach(itemBtn => {
       itemBtn.classList.remove('active')
     })
+
     btn.classList.add('active')
     MenuSite[index].classList.add('active')
   })
