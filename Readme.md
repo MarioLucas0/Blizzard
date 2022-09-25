@@ -1,4 +1,4 @@
-## Projeto final Redisign Page BancoNeon
+## Projeto final Redisign Page Blizzard
 
 Projeto Realizado no curso do codeboost
 
@@ -20,6 +20,7 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 
 - Sass
 - JavaScript
+- Gulp
 - CSS
 
 --- 
@@ -32,7 +33,7 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 
 ## 🛠️ Projeto no ar
 
-* [Netlify](https://neonbank.netlify.app)
+* [Netlify](https://redisign-page-blizzard.netlify.app/)
  
 ## 🎁 Expressões de gratidão
 
